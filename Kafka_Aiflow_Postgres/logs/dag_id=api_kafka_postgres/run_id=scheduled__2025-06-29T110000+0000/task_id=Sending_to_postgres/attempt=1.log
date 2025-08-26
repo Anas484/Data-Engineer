@@ -1,0 +1,81 @@
+{"timestamp":"2025-06-29T11:05:40.445189","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-29T11:05:40.446742","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/airdag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-29T11:05:40.626759","level":"info","event":"<BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.22.0.4', 9092)]>: connecting to kafka:9092 [('172.22.0.4', 9092) IPv4]","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T11:05:40.628867","level":"info","event":"<BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9092 <checking_api_versions_recv> [IPv4 ('172.22.0.4', 9092)]>: Broker version identified as 2.6","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T11:05:40.629612","level":"info","event":"<BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.22.0.4', 9092)]>: Connection complete.","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T11:05:40.674320Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:40.674905Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:40.675267Z","level":"info","event":"Current task name:Sending_to_postgres","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:40.675629Z","level":"info","event":"Dag name:api_kafka_postgres","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:40.655092","level":"info","event":"<BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.22.0.4', 9092)]>: connecting to kafka:9092 [('172.22.0.4', 9092) IPv4]","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T11:05:40.657244","level":"info","event":"<BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=kafka:9092 <checking_api_versions_recv> [IPv4 ('172.22.0.4', 9092)]>: Broker version identified as 2.6","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T11:05:40.657447","level":"info","event":"<BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.22.0.4', 9092)]>: Connection complete.","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T11:05:40.658085","level":"warning","event":"group_id is None: disabling auto-commit.","logger":"kafka.coordinator.consumer"}
+{"timestamp":"2025-06-29T11:05:40.658916","level":"info","event":"Updating subscribed topics to: ('products',)","logger":"kafka.consumer.subscription_state"}
+{"timestamp":"2025-06-29T11:05:40.708511","level":"info","event":"Updated partition assignment: [TopicPartition(topic='products', partition=0)]","logger":"kafka.consumer.subscription_state"}
+{"timestamp":"2025-06-29T11:05:40.709851","level":"info","event":"<BrokerConnection client_id=kafka-python-2.2.14, node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.22.0.4', 9092)]>: connecting to kafka:9092 [('172.22.0.4', 9092) IPv4]","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T11:05:40.710257","level":"info","event":"<BrokerConnection client_id=kafka-python-2.2.14, node_id=1 host=kafka:9092 <connected> [IPv4 ('172.22.0.4', 9092)]>: Connection complete.","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T11:05:40.710391","level":"info","event":"<BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.22.0.4', 9092)]>: Closing connection. ","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T11:05:40.712198","level":"info","event":"Resetting offset for partition TopicPartition(topic='products', partition=0) to offset 5.","logger":"kafka.consumer.fetcher"}
+{"timestamp":"2025-06-29T11:05:40.863364Z","level":"info","event":"Inserted: 3d69, Samsung Universe 9, 1249, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:41.934485Z","level":"info","event":"Inserted: 8s38, Microsoft Surface Laptop 4, 1499, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:43.016786Z","level":"info","event":"Inserted: 10p52, HP Pavilion 15-DK1056WM, 1099, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:44.090174Z","level":"info","event":"Inserted: 9h84, Infinix INBOOK, 1099, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:45.179576Z","level":"info","event":"Inserted: 1q62, iPhone 9, 549, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:46.263980Z","level":"info","event":"Inserted: 10q93, HP Pavilion 15-DK1056WM, 1099, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:47.337559Z","level":"info","event":"Inserted: 2y55, iPhone X, 899, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:48.419812Z","level":"info","event":"Inserted: 3p54, Samsung Universe 9, 1249, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:49.503549Z","level":"info","event":"Inserted: 8a55, Microsoft Surface Laptop 4, 1499, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:50.583942Z","level":"info","event":"Inserted: 1o23, iPhone 9, 549, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:51.657617Z","level":"info","event":"Inserted: 4c23, OPPOF19, 280, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:52.741717Z","level":"info","event":"Inserted: 7s87, Samsung Galaxy Book, 1499, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:53.823779Z","level":"info","event":"Inserted: 6f72, MacBook Pro, 1749, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:54.907952Z","level":"info","event":"Inserted: 5k17, Huawei P30, 499, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:55.992136Z","level":"info","event":"Inserted: 9f72, Infinix INBOOK, 1099, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:57.076777Z","level":"info","event":"Inserted: 4k46, OPPOF19, 280, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:58.159544Z","level":"info","event":"Inserted: 10n26, HP Pavilion 15-DK1056WM, 1099, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:05:59.228558Z","level":"info","event":"Inserted: 7h37, Samsung Galaxy Book, 1499, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:00.307090Z","level":"info","event":"Inserted: 7p46, Samsung Galaxy Book, 1499, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:01.377809Z","level":"info","event":"Inserted: 1b69, iPhone 9, 549, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:02.454548Z","level":"info","event":"Inserted: 5x98, Huawei P30, 499, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:03.536796Z","level":"info","event":"Inserted: 1g77, iPhone 9, 549, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:04.624280Z","level":"info","event":"Inserted: 5h97, Huawei P30, 499, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:05.709759Z","level":"info","event":"Inserted: 4p83, OPPOF19, 280, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:06.793719Z","level":"info","event":"Inserted: 4g72, OPPOF19, 280, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:07.873156Z","level":"info","event":"Inserted: 3a39, Samsung Universe 9, 1249, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:08.954865Z","level":"info","event":"Inserted: 1j19, iPhone 9, 549, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:10.040332Z","level":"info","event":"Inserted: 9o99, Infinix INBOOK, 1099, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:11.120716Z","level":"info","event":"Inserted: 6c27, MacBook Pro, 1749, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:12.189363Z","level":"info","event":"Inserted: 6m86, MacBook Pro, 1749, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:13.275962Z","level":"info","event":"Inserted: 7k14, Samsung Galaxy Book, 1499, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:14.367210Z","level":"info","event":"Inserted: 2t48, iPhone X, 899, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:15.447937Z","level":"info","event":"Inserted: 4x78, OPPOF19, 280, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:16.523811Z","level":"info","event":"Inserted: 2x23, iPhone X, 899, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:17.593039Z","level":"info","event":"Inserted: 7p42, Samsung Galaxy Book, 1499, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:18.680529Z","level":"info","event":"Inserted: 9j22, Infinix INBOOK, 1099, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:19.753640Z","level":"info","event":"Inserted: 4e46, OPPOF19, 280, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:20.825399Z","level":"info","event":"Inserted: 2r73, iPhone X, 899, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:21.898650Z","level":"info","event":"Inserted: 8v45, Microsoft Surface Laptop 4, 1499, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:22.985041Z","level":"info","event":"Inserted: 5l98, Huawei P30, 499, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:24.066933Z","level":"info","event":"Inserted: 7h66, Samsung Galaxy Book, 1499, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:25.148791Z","level":"info","event":"Inserted: 6g73, MacBook Pro, 1749, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:26.220646Z","level":"info","event":"Inserted: 5y83, Huawei P30, 499, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:27.292346Z","level":"info","event":"Inserted: 1i48, iPhone 9, 549, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:28.374985Z","level":"info","event":"Inserted: 4h78, OPPOF19, 280, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:29.457078Z","level":"info","event":"Inserted: 5k69, Huawei P30, 499, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:30.536299Z","level":"info","event":"Inserted: 4e96, OPPOF19, 280, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:31.610182Z","level":"info","event":"Inserted: 5v16, Huawei P30, 499, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:32.681740Z","level":"info","event":"Inserted: 3t86, Samsung Universe 9, 1249, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:33.764620Z","level":"info","event":"Inserted: 5h12, Huawei P30, 499, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:34.837907Z","level":"info","event":"Inserted: 8i58, Microsoft Surface Laptop 4, 1499, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:35.924273Z","level":"info","event":"Inserted: 7b94, Samsung Galaxy Book, 1499, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:37.006323Z","level":"info","event":"Inserted: 8g37, Microsoft Surface Laptop 4, 1499, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:38.086820Z","level":"info","event":"Inserted: 3u83, Samsung Universe 9, 1249, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:39.161379Z","level":"info","event":"Inserted: 4s11, OPPOF19, 280, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:40.242526Z","level":"info","event":"Inserted: 7s42, Samsung Galaxy Book, 1499, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:41.327943Z","level":"info","event":"Inserted: 5k65, Huawei P30, 499, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:42.400596Z","level":"info","event":"Inserted: 1f19, iPhone 9, 549, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:43.483511Z","level":"info","event":"Inserted: 7v52, Samsung Galaxy Book, 1499, laptops","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:44.565275Z","level":"info","event":"Inserted: 3k35, Samsung Universe 9, 1249, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:06:52.228253Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"success"}},"logger":"task"}
+{"timestamp":"2025-06-29T11:06:52.244978Z","level":"error","event":"Task killed!","logger":"task"}

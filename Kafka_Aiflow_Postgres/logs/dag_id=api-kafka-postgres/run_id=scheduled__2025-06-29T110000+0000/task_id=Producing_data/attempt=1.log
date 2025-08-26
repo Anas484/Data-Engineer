@@ -1,0 +1,16 @@
+{"timestamp":"2025-06-29T11:00:20.635615","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-29T11:00:20.636766","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/airdag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-29T11:00:20.808299","level":"info","event":"<BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.22.0.4', 9092)]>: connecting to kafka:9092 [('172.22.0.4', 9092) IPv4]","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T11:00:20.811042","level":"info","event":"<BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9092 <checking_api_versions_recv> [IPv4 ('172.22.0.4', 9092)]>: Broker version identified as 2.6","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T11:00:20.811944","level":"info","event":"<BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.22.0.4', 9092)]>: Connection complete.","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T11:00:20.854256Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:00:20.854904Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:00:20.855295Z","level":"info","event":"Current task name:Producing_data","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:00:20.855644Z","level":"info","event":"Dag name:api-kafka-postgres","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:00:20.933526","level":"info","event":"<BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.22.0.4', 9092)]>: connecting to kafka:9092 [('172.22.0.4', 9092) IPv4]","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T11:00:20.934326","level":"info","event":"<BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=kafka:9092 <connected> [IPv4 ('172.22.0.4', 9092)]>: Connection complete.","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T11:00:20.934525","level":"info","event":"<BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.22.0.4', 9092)]>: Closing connection. ","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T11:00:20.941887","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-06-29T11:00:20.972424Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:00:20.973024Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T11:00:20.973503Z","level":"info","event":"Task operator:<Task(PythonOperator): Producing_data>","chan":"stdout","logger":"task"}

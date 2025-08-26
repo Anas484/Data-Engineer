@@ -1,0 +1,22 @@
+{"timestamp":"2025-06-29T10:53:46.051701","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-29T10:53:46.052239","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/airdag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-29T10:53:46.184485","level":"info","event":"<BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.22.0.4', 9092)]>: connecting to kafka:9092 [('172.22.0.4', 9092) IPv4]","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T10:53:46.186950","level":"info","event":"<BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9092 <checking_api_versions_recv> [IPv4 ('172.22.0.4', 9092)]>: Broker version identified as 2.6","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T10:53:46.187635","level":"info","event":"<BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.22.0.4', 9092)]>: Connection complete.","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T10:53:46.252007Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T10:53:46.252501Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T10:53:46.252776Z","level":"info","event":"Current task name:Sending_to_postgres","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T10:53:46.253019Z","level":"info","event":"Dag name:api-kafka-postgres","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T10:53:46.233203","level":"info","event":"<BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.22.0.4', 9092)]>: connecting to kafka:9092 [('172.22.0.4', 9092) IPv4]","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T10:53:46.236475","level":"info","event":"<BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=kafka:9092 <checking_api_versions_recv> [IPv4 ('172.22.0.4', 9092)]>: Broker version identified as 2.6","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T10:53:46.236783","level":"info","event":"<BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.22.0.4', 9092)]>: Connection complete.","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T10:53:46.237657","level":"warning","event":"group_id is None: disabling auto-commit.","logger":"kafka.coordinator.consumer"}
+{"timestamp":"2025-06-29T10:53:46.238932","level":"info","event":"Updating subscribed topics to: ('products',)","logger":"kafka.consumer.subscription_state"}
+{"timestamp":"2025-06-29T10:53:46.415211","level":"info","event":"Updated partition assignment: [TopicPartition(topic='products', partition=0)]","logger":"kafka.consumer.subscription_state"}
+{"timestamp":"2025-06-29T10:53:46.416374","level":"info","event":"<BrokerConnection client_id=kafka-python-2.2.14, node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.22.0.4', 9092)]>: connecting to kafka:9092 [('172.22.0.4', 9092) IPv4]","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T10:53:46.416799","level":"info","event":"<BrokerConnection client_id=kafka-python-2.2.14, node_id=1 host=kafka:9092 <connected> [IPv4 ('172.22.0.4', 9092)]>: Connection complete.","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T10:53:46.416935","level":"info","event":"<BrokerConnection client_id=kafka-python-2.2.14, node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.22.0.4', 9092)]>: Closing connection. ","logger":"kafka.conn"}
+{"timestamp":"2025-06-29T10:53:46.443237","level":"info","event":"Resetting offset for partition TopicPartition(topic='products', partition=0) to offset 2.","logger":"kafka.consumer.fetcher"}
+{"timestamp":"2025-06-29T10:53:47.116922Z","level":"info","event":"Inserted: 4s36, OPPOF19, 280, smartphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-29T10:55:42.549001Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"success"}},"logger":"task"}
+{"timestamp":"2025-06-29T10:55:42.569447Z","level":"error","event":"Task killed!","logger":"task"}
