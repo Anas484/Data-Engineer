@@ -1,6 +1,6 @@
-# 🏠 House Finder App
+# 🏠 NestFinder
 
-Welcome to **House Finder** – a Streamlit web app to explore rental and sale listings in Mumbai.  
+Welcome to **NestFinder** – a Streamlit web app to explore rental and sale listings in Mumbai.  
 Built with **Streamlit**, **PostgreSQL (RDS)**, and **Python**.  
 
 🌐 **Live Demo:**  
