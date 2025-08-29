@@ -24,3 +24,20 @@ git clone https://github.com/Anas484/Data-Engineer/Streamlit_house_app.git
 cd Streamlit_house_app
 pip install -r requirements.txt
 streamlit run main.py
+
+Database Structure for the APP
+
+```sql
+CREATE TABLE IF NOT EXISTS houses (
+row_hash_id   VARCHAR(64) PRIMARY KEY,
+name          TEXT,
+flatType_bhk  INT,
+bathrooms     INT,
+area_sqft     INT,
+area_type     TEXT,
+price         NUMERIC,
+deposit       NUMERIC,
+rentOrsale    TEXT,
+locality      TEXT,
+link          TEXT,
+processed_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
