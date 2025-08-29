@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import psycopg2
 
+st.set_page_config(layout="centered")
 st.title("House :blue[Finder] :house:")
 
 try:

@@ -2,7 +2,10 @@ import streamlit as st
 import pandas as pd
 import psycopg2
 import plotly.express as px
+import sys
+
 st.set_page_config(layout="wide")
+
 st.title("Housing :blue[Dashboard] 📊")
 
 try:
