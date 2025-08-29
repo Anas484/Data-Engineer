@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import psycopg2
-from numpy.random import default_rng as rng
 import plotly.express as px
 st.set_page_config(layout="wide")
 st.title("Housing :blue[Dashboard] 📊")
