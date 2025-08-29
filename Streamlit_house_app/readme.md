@@ -1,7 +1,7 @@
 # 🏠 NestFinder
 
 Welcome to **NestFinder** – a Streamlit web app to explore rental and sale listings in Mumbai.  
-Built with **Streamlit**, **PostgreSQL (RDS)**, and **Python**.  
+Built with **Streamlit**, **PostgreSQL (RDS)**, **Python**, **AWS Lambda**, **AWS S3**, **Prefect**, **Playwright** and **Boto3**.  
 
 🌐 **Live Demo:**  
 👉 [Visit the App](https://anas-house.streamlit.app/)  
