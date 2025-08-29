@@ -3,7 +3,7 @@ import pandas as pd
 import psycopg2
 
 st.set_page_config(layout="centered")
-st.title("House :blue[Finder] :house:")
+st.title("Nest:blue[Finder] :house:")
 
 try:
     db_config = st.secrets["database"]
@@ -37,14 +37,16 @@ with col1:
 with col2:
     price_max = st.number_input("Enter Max Price")
     st.write("The current number is ", price_max)
-local = ["Matunga West","Majiwada","Wadala","Parel","Abhyudaya Nagar","Ghatkopar East","Ashok Nagar","Dadar","Worli","Chembur East","Kandivali East","Kanjurmarg west","Lower Parel","Prabhadevi","Lokhandwala Kandivali East","Mulund East","Lokhandwala Andheri West","Goregaon West","Dadar West","Dadar East","Hanuman Nagar","Vikhroli East","Marol","Pali Hill","Pant Nagar","Upper Govd Nagar","BDD Chawls Worli","Bandra Kurla Complex","Mahim West","Lower Parel West","Dahisar East","Wadala East","Vile Parle East","Kanjurmarg East","Andheri West","Chembur","Kurla West","Goregaon East","Lalbaug","Powai","Andheri East","Anand Nagar","Tunga Village","Borivali East","Byculla","Hiranandani Gardens Powai","Bandra East","Amboli","Kanchpada","Thakur complex","Vaishali Nagar","Thakur Village","Old Prabhadevi","Lokhandwala Complex","Tilak nagar","Malad West","Yamuna Nagar","Santacruz East","Versova","Garodia Nagar","Napean Sea Road","Deonar","Matunga","Netaji Subhash Nagar","Upper Worli","Reclamation","Malad East","Paranjape Nagar","Nehru Nagar","Bandra West",'mg road',"Sakaka","JVLR","Mahalaxmi","Pirojshanagar","Gamdevi","Peddar Road"]
+default_localities = ["Matunga West","Majiwada","Wadala","Parel","Abhyudaya Nagar","Ghatkopar East","Ashok Nagar","Dadar","Worli","Chembur East","Kandivali East","Kanjurmarg west","Lower Parel","Prabhadevi","Lokhandwala Kandivali East","Mulund East","Lokhandwala Andheri West","Goregaon West","Dadar West","Dadar East","Hanuman Nagar","Vikhroli East","Marol","Pali Hill","Pant Nagar","Upper Govd Nagar","BDD Chawls Worli","Bandra Kurla Complex","Mahim West","Lower Parel West","Dahisar East","Wadala East","Vile Parle East","Kanjurmarg East","Andheri West","Chembur","Kurla West","Goregaon East","Lalbaug","Powai","Andheri East","Anand Nagar","Tunga Village","Borivali East","Byculla","Hiranandani Gardens Powai","Bandra East","Amboli","Kanchpada","Thakur complex","Vaishali Nagar","Thakur Village","Old Prabhadevi","Lokhandwala Complex","Tilak nagar","Malad West","Yamuna Nagar","Santacruz East","Versova","Garodia Nagar","Napean Sea Road","Deonar","Matunga","Netaji Subhash Nagar","Upper Worli","Reclamation","Malad East","Paranjape Nagar","Nehru Nagar","Bandra West",'mg road',"Sakaka","JVLR","Mahalaxmi","Pirojshanagar","Gamdevi","Peddar Road"]
 
-with conn.cursor() as cur:
-        cur.execute("select distinct(locality) from houses")
-        data = cur.fetchall()
-local_list = [row[0] for row in data]
+try:
+    with conn.cursor() as cur:
+        cur.execute("SELECT DISTINCT locality FROM houses ORDER BY locality")
+        db_localities = [row[0] for row in cur.fetchall()]
+except Exception:
+    db_localities = []
 
-locality = st.multiselect("Locality", local_list if conn else local)
+locality = st.multiselect("Locality", db_localities if db_localities else default_localities)
 
 submit = st.button("Search")
 
@@ -81,13 +83,15 @@ if conditions:
 
 st.write("Generated SQL:")
 st.code(query, language="sql")
-
-if submit:
-    with conn.cursor() as cur:
-        cur.execute(query=query)
-        data = cur.fetchall()
-        columns = [desc[0] for desc in cur.description]
-        df = pd.DataFrame(data,columns=columns)
-        st.write("Returned : ", len(df))
-        with st.container():
-            st.dataframe(df)
+try:
+    if submit:
+        with conn.cursor() as cur:
+            cur.execute(query=query)
+            data = cur.fetchall()
+            columns = [desc[0] for desc in cur.description]
+            df = pd.DataFrame(data,columns=columns)
+            st.write("Returned : ", len(df))
+            with st.container():
+                st.dataframe(df)
+except Exception:
+    st.warning("The Database is not connected")
