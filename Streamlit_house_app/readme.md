@@ -23,4 +23,4 @@ Clone the repo and install requirements:
 git clone https://github.com/Anas484/Data-Engineer/Streamlit_house_app.git
 cd Streamlit_house_app
 pip install -r requirements.txt
-streamlit run app.py
+streamlit run main.py
