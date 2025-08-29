@@ -24,6 +24,7 @@ git clone https://github.com/Anas484/Data-Engineer/Streamlit_house_app.git
 cd Streamlit_house_app
 pip install -r requirements.txt
 streamlit run main.py
+````
 
 Database Structure for the APP
 
@@ -41,3 +42,12 @@ rentOrsale    TEXT,
 locality      TEXT,
 link          TEXT,
 processed_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+```
+
+Indexes
+
+```sql
+CREATE INDEX idx_houses_filter ON houses(flattype_bhk, locality, area_type, area_sqft);
+```
+
+Use the csv in the repo to get started.
