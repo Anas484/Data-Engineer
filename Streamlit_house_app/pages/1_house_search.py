@@ -6,13 +6,15 @@ st.set_page_config(layout="centered")
 st.title("House :blue[Finder] :house:")
 
 try:
+    db_config = st.secrets["database"]
+
     conn = psycopg2.connect(
-            host="database-1.cv8wm6u8wjf7.ap-south-1.rds.amazonaws.com",
-            dbname="house",
-            user="postgres",
-            password="anasshafi",
-            port=5432
-        )
+        host=db_config["host"],
+        port=db_config["port"],
+        dbname=db_config["dbname"],
+        user=db_config["user"],
+        password=db_config["password"]
+    )
     if conn:
         st.badge("Connected", color="green")
 except:
