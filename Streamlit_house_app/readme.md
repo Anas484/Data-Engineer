@@ -50,4 +50,4 @@ Indexes
 CREATE INDEX idx_houses_filter ON houses(flattype_bhk, locality, area_type, area_sqft);
 ```
 
-Use the csv in the repo to get started.
+Import CSV from the repo to SQL table to get started..
